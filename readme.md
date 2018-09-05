@@ -125,6 +125,13 @@ Default: `10000`
 
 Timeout in milliseconds for getting a response.
 
+### retry
+
+Type: `boolean`<br>
+Default: `true`
+
+Whether or not an error should be thrown if the response status is not in the range 200...299.
+
 ### ky.extend(defaultOptions)
 
 Create a new `ky` instance with some defaults overridden with your own.

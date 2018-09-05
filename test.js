@@ -222,6 +222,10 @@ test('timeout option', async t => {
 	await server.close();
 });
 
+test('throwHttpErrors option', async t => {
+	const server = await createTestSerever();
+});
+
 test('ky.extend()', async t => {
 	const server = await createTestServer();
 	server.get('/', (request, response) => {
